@@ -242,7 +242,6 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin: 5rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -416,7 +415,6 @@ main {
   /* hot deal section style */
 
   .hot-deal {
-    margin: 3rem 0;
     gap: 2rem;
     flex-direction: column-reverse;
     justify-content: center;
