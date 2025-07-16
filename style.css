@@ -1,0 +1,504 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* <<<<<<<<<<<<  responsive design for desktop  >>>>>>>>>>> */
+
+body {
+  font-family: "lato";
+  height: 100vh;
+}
+
+/* header section style */
+
+.header {
+  background-color: rgba(229, 105, 84, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  justify-content: center;
+  padding: 0 15rem;
+}
+
+.header-container {
+  width: 44.3rem;
+  height: 31.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.header-container h1 {
+  font-size: 5rem;
+}
+
+.header-container p {
+  font-size: 1.3rem;
+}
+
+.btn {
+  width: 175px;
+  height: 64px;
+  font-size: 20px;
+  background-color: #e55473;
+  color: white;
+  border-radius: 8px;
+  border: none;
+}
+
+.header img {
+  width: 39.7rem;
+  height: 50rem;
+  margin-top: 3.1rem;
+}
+
+/* feature section style */
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7rem 0;
+}
+
+.feature-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.feature-container h1 {
+  font-size: 2.5rem;
+}
+
+.feature-container p {
+  text-align: center;
+  line-height: 1.8rem;
+  font-size: 1.1rem;
+}
+
+.hide {
+  display: none;
+}
+
+/* flower section style */
+
+.flower-section {
+  display: flex;
+  gap: 5rem;
+  margin: 3rem 0;
+}
+
+.flower-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.flower-container > div {
+  position: relative;
+  display: inline-block;
+}
+
+.rect {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.flw {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 70%;
+  overflow: hidden;
+}
+
+.flw img {
+  width: 100%;
+  height: auto;
+}
+
+.flower-container p {
+  font-size: 1.4rem;
+  text-decoration: underline;
+}
+
+/* service section style */
+
+.service {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20rem;
+  padding: 5rem 10rem;
+  background-color: rgba(39, 39, 39, 0.05);
+  border-radius: 10px;
+}
+
+.service-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.service img {
+  width: 88px;
+  height: 88px;
+}
+
+.service p {
+  font-size: 1.2rem;
+}
+
+/* hot deal section style */
+
+.hot-deal {
+  display: flex;
+  align-items: center;
+  background-color: rgba(229, 84, 115, 0.05);
+  width: 100%;
+  justify-content: center;
+  gap: 15rem;
+  margin: 3rem 0;
+}
+
+.hot-deal_container {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hot-deal_container h1 {
+  font-size: 2.4rem;
+}
+
+.hot-deal_container span {
+  color: #e55473;
+}
+
+.hot-deal_container p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: rgba(39, 39, 39, 0.6);
+}
+
+/* <<<<<<<<<<<<  responsive design for mobile  >>>>>>>>>>> */
+
+@media screen and (max-width: 576px) {
+  /* header section style */
+
+  .header {
+    padding: 2rem 1rem 0 1rem;
+    gap: 1rem;
+  }
+
+  .header-container {
+    width: 18rem;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  .header-container h1 {
+    font-size: 1.45rem;
+  }
+
+  .header-container p {
+    font-size: 0.7rem;
+  }
+
+  .btn {
+    width: 70px;
+    height: 30px;
+    font-size: 0.7rem;
+  }
+
+  .header img {
+    width: 11rem;
+    height: auto;
+    margin-top: 3.1rem;
+  }
+
+  /* feature section style */
+
+  .feature {
+    padding: 5rem 1rem;
+  }
+
+  .feature-container h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .feature-container p {
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+    padding: 0 3rem;
+  }
+
+  /* flower section style */
+
+  .flower-section {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+    gap: 5rem;
+  }
+
+  .flower-container p {
+    font-size: 1.1rem;
+  }
+
+  /* service section style */
+
+  .service {
+    margin: 3rem 0;
+    gap: 4rem;
+    padding: 1rem 2rem;
+  }
+
+  .service-box {
+    gap: 1rem;
+  }
+
+  .service img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .service p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  /* hot deal section style */
+
+  .hot-deal {
+    margin: 3rem 0;
+    gap: 2rem;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .hot-deal_container {
+    gap: 1rem;
+  }
+
+  .hot-deal_container h1 {
+    font-size: 1.2rem;
+  }
+
+  .hot-deal_container span {
+    color: #e55473;
+  }
+
+  .hot-deal_container p {
+    font-size: 0.8rem;
+    padding: 0 5rem;
+  }
+
+  .hot-deal img{
+    width: 10rem;
+  }
+}
+
+/* <<<<<<<<<<<<  responsive design for tab  >>>>>>>>>>> */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  /* header section style */
+
+  .header {
+    padding: 2rem 1rem 0 1rem;
+    gap: 5rem;
+  }
+
+  .header-container {
+    width: 18rem;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  .header-container h1 {
+    font-size: 2rem;
+  }
+
+  .header-container p {
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    width: 90px;
+    height: 40px;
+    font-size: 0.8rem;
+  }
+
+  .header img {
+    width: 15rem;
+    height: auto;
+    margin-top: 3rem;
+  }
+
+  /* feature section style */
+
+  .feature {
+    padding: 5rem 1rem;
+  }
+
+  .feature-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .feature-container p {
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    padding: 0 6rem;
+  }
+
+  /* flower section style */
+
+  .flower-section {
+    gap: 2rem;
+  }
+
+  .flower-container p {
+    font-size: 1rem;
+  }
+
+  /* service section style */
+
+  .service {
+    margin: 3rem 0;
+    gap: 7rem;
+    padding: 1rem 2rem;
+  }
+
+  .service-box {
+    gap: 1rem;
+  }
+
+  .service img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .service p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  /* hot deal section style */
+
+  .hot-deal {
+    gap: 2rem;
+  }
+
+
+  .hot-deal_container h1 {
+    font-size: 1.5rem;
+  }
+
+  .hot-deal_container span {
+    color: #e55473;
+  }
+
+  .hot-deal_container p {
+    font-size: 0.9rem;
+    padding: 0 5rem;
+  }
+
+  .hot-deal img{
+    width: 12rem;
+  }
+}
+
+/* <<<<<<<<<<<<  responsive design for large screen  >>>>>>>>>>> */
+
+@media screen and (min-width: 993px) and (max-width: 1620px) {
+  /* header section style */
+
+  .header {
+    padding: 2rem 5rem 0 5rem;
+    gap: 3rem;
+  }
+
+  .header-container {
+    width: 30rem;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  .header-container h1 {
+    font-size: 3rem;
+  }
+
+  .header-container p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    width: 90px;
+    height: 40px;
+    font-size: 0.8rem;
+  }
+
+  .header img {
+    width: 20rem;
+    height: auto;
+    margin-top: 3rem;
+  }
+
+  /* flower section style */
+
+  .flower-section {
+    display: flex;
+    margin: 3rem;
+    gap: 2rem;
+  }
+
+  /* service section style */
+
+  .service {
+    margin: 3rem 0;
+    gap: 10rem;
+    padding: 1rem 2rem;
+  }
+
+  .service-box {
+    gap: 1rem;
+  }
+
+  .service img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .service p {
+    font-size: 1.15rem;
+    text-align: center;
+  }
+
+    /* hot deal section style */
+
+  .hot-deal {
+    gap: 5rem;
+  }
+
+  .hot-deal_container h1 {
+    font-size: 2rem;
+  }
+
+}
